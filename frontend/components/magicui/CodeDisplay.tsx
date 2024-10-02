@@ -63,7 +63,7 @@ export function CodeDisplay({
   };
 
   return (
-    <div className="mx-auto w-full">
+    <div className="mx-auto w-full max-w-5xl">
       <div className="relative w-full overflow-hidden rounded-xl border border-border">
         <div className="flex items-center justify-between bg-accent p-2 text-sm text-foreground">
           <div className="flex items-center">
