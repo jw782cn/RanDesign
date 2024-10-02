@@ -7,6 +7,8 @@ export default function Home() {
         imageSrc="/image.jpg"
         name="Villa Banovi"
         pricePerNight={224}
+        rating={4.5}
+        location="Vinjerac, Croatia"
       />
     </div>
   );
