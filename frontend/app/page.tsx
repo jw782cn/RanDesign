@@ -113,9 +113,14 @@ export default function Home() {
           className="mb-12"
         >
           <h3 className="text-2xl font-semibold mb-4">Project Inspiration</h3>
+          <p className="text-gray-700 mb-4">
+            This project draws inspiration from the incredible work of a Twitter user who consistently shares their progress in mastering Tailwind CSS and Framer Motion for dynamic design effects. Their commitment to #BuildInPublic has been truly inspiring, motivating me to embark on this journey of daily UI challenges.
+          </p>
           <ClientTweetCard id="1831037740974293117" className="shadow-2xl max-w-sm mx-auto mb-6" />
+          <p className="text-gray-600 text-sm italic mt-4">
+            Follow along with their journey and get inspired to create your own amazing designs!
+          </p>
         </motion.div>
-        
         {/* Join challenge section */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
