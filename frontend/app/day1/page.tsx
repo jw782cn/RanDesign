@@ -32,9 +32,9 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-4 items-start">
 
           {/* Villa cards section */}
-          <div className="w-full w-1/2 h-full">
-          <h2 className="text-4xl font-bold mb-8 text-center">Day 1: Card Design</h2>
-            <div className="flex flex-col items-start gap-4 h-full items-center justify-center h-full">
+          <div className="w-full md:w-1/2">
+            <h2 className="text-4xl font-bold mb-8 text-center">Day 1: Card Design</h2>
+            <div className="flex flex-col items-center justify-center gap-4 h-full">
               {villas.map((villa, index) => (
                 <motion.div
                   key={index}
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
           
           {/* Description and Code section */}
-          <div className="w-full w-1/2 flex flex-col justify-between bg-gray-100 p-4 rounded-lg">
+          <div className="w-full md:w-1/2 flex flex-col justify-between bg-gray-100 p-4 rounded-lg">
             <div className="mb-4">
               <button
                 className={`mr-4 px-4 py-2 rounded transition-colors duration-200 ease-in-out
