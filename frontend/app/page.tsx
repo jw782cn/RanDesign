@@ -121,7 +121,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="bg-gray-100 p-6 rounded-lg"
+          className="bg-gray-100 p-6 rounded-lg mb-12"
         >
           <h3 className="text-2xl font-semibold mb-4">About</h3>
           <p className="text-gray-700 mb-4">Like this project? Give it a star on GitHub or follow the project progress on Twitter!</p>
@@ -148,6 +148,22 @@ export default function Home() {
             </motion.a>
           </div>
         </motion.div>
+
+        {/* Updated Footer section */}
+        <motion.footer
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="text-center py-8 border-t border-gray-200"
+        >
+          <p className="text-xl font-semibold mb-2">Practice Makes Perfect</p>
+          <p className="text-gray-600 mb-4">
+            "The only way to do great work is to love what you do. Keep pushing forward, and success will follow."
+          </p>
+          <p className="text-sm text-gray-500 italic">
+            - Chenran
+          </p>
+        </motion.footer>
       </div>
     </div>
   );
