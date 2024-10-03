@@ -4,45 +4,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CodeDisplay } from '@/components/magicui/CodeDisplay';
 import CreateButton from './CreateButton';
+import { code } from './day2';
+import ClientTweetCard from "@/components/magicui/client-tweet-card";
 
-const buttonDescription = "This 'Create New' button design combines functionality with a modern, interactive UI. It features a subtle hover effect that lifts the button slightly and increases its shadow, providing visual feedback to the user. When clicked, the button returns to its original position, creating a satisfying press effect. The design includes a plus icon for clear visual communication of its purpose.";
-
-const buttonCode = `
-import React from 'react';
-
-const CreateButton: React.FC = () => {
-  return (
-    <button
-      className="
-        flex items-center justify-center
-        px-4 py-2 rounded-full
-        bg-white text-black
-        shadow-md hover:shadow-lg
-        transform hover:-translate-y-0.5 active:translate-y-0
-        transition duration-150 ease-in-out
-      "
-    >
-      <svg
-        className="w-5 h-5 mr-2"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-        />
-      </svg>
-      Create New
-    </button>
-  );
-};
-
-export default CreateButton;
-`;
+const buttonDescription = `This 'Create New' button combines functionality with modern UI design. Initially compact, it expands on click to reveal a grid of creation options. It features a sleek initial design with hover and click animations, an expanded view with multiple creation options, smooth transitions between states, and a responsive, accessible design. The button enhances user experience by providing quick access to various creation options in a visually appealing, interactive format.`;
 
 export default function Day2() {
   const [activeTab, setActiveTab] = useState('description');
@@ -54,11 +19,12 @@ export default function Day2() {
           {/* Button showcase section */}
           <div className="w-full md:w-1/2">
             <h2 className="text-4xl font-bold mb-8 text-center">Day 2: Interactive Button</h2>
-            <div className="flex flex-col items-center justify-center gap-4 h-full">
+            <div className="flex items-center justify-center w-full h-96 border border-gray-100 rounded-lg">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
+                className="flex items-center justify-center"
               >
                 <CreateButton />
               </motion.div>
@@ -102,6 +68,11 @@ export default function Day2() {
                     <h3 className="text-2xl font-semibold mb-2">Button Design Description</h3>
                     <p className="text-gray-700 mb-6">{buttonDescription}</p>
                   </div>
+                  {/* Inspiration section */}
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Inspiration</h3>
+                    <ClientTweetCard id="1833548581342487020" className="shadow-2xl max-w-sm" />
+                  </div>
                 </motion.div>
               ) : (
                 <motion.div
@@ -113,7 +84,7 @@ export default function Day2() {
                   className="h-[500px] overflow-auto"
                 >
                   <CodeDisplay
-                    code={buttonCode}
+                    code={code}
                     language="typescript"
                     filename="CreateButton.tsx"
                     lightTheme="github-light"

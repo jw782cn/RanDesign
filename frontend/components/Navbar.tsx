@@ -17,6 +17,7 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="flex items-center space-x-4">
           <Link href="/day1" className="text-gray-600 hover:text-gray-800">Day 1</Link>
+          <Link href="/day2" className="text-gray-600 hover:text-gray-800">Day 2</Link>
         </div>
       </div>
     </nav>

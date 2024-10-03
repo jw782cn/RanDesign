@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+export const code = `import React, { useState } from 'react';
 import { HiOutlinePlus, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -26,14 +26,14 @@ const CreateButton: React.FC = () => {
 
     return (
         <motion.div
-            className={`
+            className={\`
                 transition-all duration-200 ease-in-out
                 rounded-lg
                 text-gray-600
                 w-64 h-36
-                ${isExpanded ? 'border border-gray-200' : 'border-transparent'}
+                \${isExpanded ? 'border border-gray-200' : 'border-transparent'}
                 relative
-            `}
+            \`}
             initial={false}
             animate={{
                 borderColor: isExpanded ? 'rgba(243, 244, 246, 1)' : 'rgba(243, 244, 246, 0)',
@@ -41,12 +41,12 @@ const CreateButton: React.FC = () => {
             transition={{ duration: 0.3 }}
         >
             <motion.button
-                className={`
+                className={\`
                     flex items-center justify-center
-                    ${isExpanded ? 'shadow-none border-none rounded-none mt-2' :
+                    \${isExpanded ? 'shadow-none border-none rounded-none mt-2' :
                         'px-4 py-2 border border-gray-100 rounded-full shadow scale-[1.02] transform active:scale-100 active:shadow-none'}
                     transition-all duration-300 ease-in-out
-                `}
+                \`}
                 initial={false}
                 onClick={toggleExpand}
                 whileTap={{ scale: 0.95 }}
@@ -59,7 +59,7 @@ const CreateButton: React.FC = () => {
                     <HiOutlinePlus className="w-5 h-5 stroke-2 mr-2" />
                 </motion.div>
                 <motion.span
-                    className={`text-sm font-medium w-20`}
+                    className={\`text-sm font-medium w-20\`}
                     initial={false}
                     transition={{ duration: 0.3 }}
                 >
@@ -117,4 +117,4 @@ const CreateButton: React.FC = () => {
     );
 };
 
-export default CreateButton;
+export default CreateButton;`;

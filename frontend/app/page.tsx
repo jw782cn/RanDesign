@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import ClientTweetCard from "@/components/magicui/client-tweet-card";
 import VillaCard from '@/components/VillaCard';
+import CreateButton from './day2/CreateButton';
 
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. Every day there's a new design challenge, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
 
@@ -11,6 +12,11 @@ const featuredDays = [
     day: 1,
     title: "Card Design",
     description: "Explore modern card design, blending aesthetics and functionality.",
+  },
+  {
+    day: 2,
+    title: "Interactive Button",
+    description: "Create an engaging, animated button with hover effects.",
   },
   // More days can be added as needed
 ];
@@ -81,27 +87,46 @@ export default function Home() {
           </div>
         </motion.div>
         
-        {/* Latest challenge section */}
+        {/* Latest challenges section */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
           className="mb-12"
         >
-          <h3 className="text-2xl font-semibold mb-4">Latest Challenge: Day 1 - Card Design</h3>
-          <div className="flex justify-center">
-            <VillaCard
-              imageSrc={latestVilla.imageSrc}
-              name={latestVilla.name}
-              pricePerNight={latestVilla.pricePerNight}
-              rating={latestVilla.rating}
-              location={latestVilla.location}
-            />
-          </div>
-          <div className="mt-4 text-center">
-            <Link href="/day1" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
-              View Details <span className="ml-2">→</span>
-            </Link>
+          <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Day 1 Challenge */}
+            <div>
+              <h4 className="text-xl font-semibold mb-2">Day 1: Card Design</h4>
+              <div className="flex justify-center">
+                <VillaCard
+                  imageSrc={latestVilla.imageSrc}
+                  name={latestVilla.name}
+                  pricePerNight={latestVilla.pricePerNight}
+                  rating={latestVilla.rating}
+                  location={latestVilla.location}
+                />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day1" className="inline-bloc  h-96 px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 1 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
+            
+            {/* Day 2 Challenge */}
+            <div>
+              <h4 className="text-xl font-semibold mb-2">Day 2: Interactive Button</h4>
+              <div className="flex justify-center items-center h-96 border border-gray-100 rounded-lg">
+                <CreateButton />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day2" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 2 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </motion.div>
         
