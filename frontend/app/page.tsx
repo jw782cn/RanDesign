@@ -6,7 +6,7 @@ import VillaCard from '@/components/VillaCard';
 import CreateButton from './day2/CreateButton';
 import Command from './day3/Command';
 
-const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. Every day there's a new design challenge, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
+const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
 
 const featuredDays = [
   {
