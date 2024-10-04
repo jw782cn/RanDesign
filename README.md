@@ -3,18 +3,18 @@
   <h1>RanDesign</h1>
   <p><em>50-Day Frontend Design Challenge</em></p>
   <br>
-  <a href="https://github.com/jw782cn/animation-practice/stargazers"><img src="https://img.shields.io/github/stars/jw782cn/animation-practice" alt="Stars Badge"/></a>
-  <a href="https://github.com/jw782cn/animation-practice/network/members"><img src="https://img.shields.io/github/forks/jw782cn/animation-practice" alt="Forks Badge"/></a>
-  <a href="https://github.com/jw782cn/animation-practice/pulls"><img src="https://img.shields.io/github/issues-pr/jw782cn/animation-practice" alt="Pull Requests Badge"/></a>
-  <a href="https://github.com/jw782cn/animation-practice/issues"><img src="https://img.shields.io/github/issues/jw782cn/animation-practice" alt="Issues Badge"/></a>
-  <a href="https://github.com/jw782cn/animation-practice/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jw782cn/animation-practice" alt="License Badge"/></a>
+  <a href="https://github.com/jw782cn/RanDesign/stargazers"><img src="https://img.shields.io/github/stars/jw782cn/RanDesign" alt="Stars Badge"/></a>
+  <a href="https://github.com/jw782cn/RanDesign/network/members"><img src="https://img.shields.io/github/forks/jw782cn/RanDesign" alt="Forks Badge"/></a>
+  <a href="https://github.com/jw782cn/RanDesign/pulls"><img src="https://img.shields.io/github/issues-pr/jw782cn/RanDesign" alt="Pull Requests Badge"/></a>
+  <a href="https://github.com/jw782cn/RanDesign/issues"><img src="https://img.shields.io/github/issues/jw782cn/RanDesign" alt="Issues Badge"/></a>
+  <a href="https://github.com/jw782cn/RanDesign/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jw782cn/RanDesign" alt="License Badge"/></a>
 </div>
 
 ## 🌟 Project Overview
 
 Hello there! I'm Chenran 👋 Welcome to my 50-day frontend design challenge project. Here, I tackle a new UI design challenge every day, showcasing different components and layout techniques. Through this project, I aim to enhance my frontend skills while providing inspiration and reference for other learners.
 
-**🔗 [View the Live Project](https://animation-practice-psi.vercel.app/)**
+**🔗 [View the Live Project](https://RanDesign-psi.vercel.app/)**
 
 ## 🚀 Features
 
@@ -48,7 +48,7 @@ This project draws inspiration from a Twitter user who consistently shares their
 
 ## 📣 Stay Connected
 
-- Star the project on [GitHub](https://github.com/jw782cn/animation-practice) ⭐
+- Star the project on [GitHub](https://github.com/jw782cn/RanDesign) ⭐
 - Follow the project progress on [Twitter](https://x.com/Nin19536)
 
 ## 📜 License
