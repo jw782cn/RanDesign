@@ -14,7 +14,7 @@
 
 Hello there! I'm Chenran 👋 Welcome to my 50-day frontend design challenge project. Here, I tackle a new UI design challenge every day, showcasing different components and layout techniques. Through this project, I aim to enhance my frontend skills while providing inspiration and reference for other learners.
 
-**🔗 [View the Live Project](https://RanDesign-psi.vercel.app/)**
+**🔗 [View the Live Project](https://animation-practice-psi.vercel.app/)**
 
 ## 🚀 Features
 
