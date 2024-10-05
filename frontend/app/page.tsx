@@ -5,7 +5,7 @@ import ClientTweetCard from "@/components/magicui/client-tweet-card";
 import VillaCard from '@/components/VillaCard';
 import CreateButton from './day2/CreateButton';
 import Command from './day3/Command';
-
+import Upload from './day4/Upload';
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
 
 const featuredDays = [
@@ -23,6 +23,11 @@ const featuredDays = [
     day: 3,
     title: "Command Menu",
     description: "Create an interactive command menu with search functionality.",
+  },
+  {
+    day: 4,
+    title: "File Upload",
+    description: "Create an interactive file upload component with a progress bar.",
   },
 ];
 
@@ -101,6 +106,18 @@ export default function Home() {
         >
           <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 space-y-4">
+            {/* Day 4 Challenge */}
+            <div className="col-span-2">
+              <h4 className="text-xl font-semibold mb-2">Day 4: File Upload</h4>
+              <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg">
+                <Upload />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day4" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 4 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
             {/* Day 3 Challenge */}
             <div className="col-span-2 h-[36rem]">
               <h4 className="text-xl font-semibold mb-2">Day 3: Command Menu</h4>
