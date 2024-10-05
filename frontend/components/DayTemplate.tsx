@@ -29,7 +29,7 @@ export default function DayTemplate({
   return (
     <div className="bg-white p-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-4 items-start h-[36rem]">
+        <div className="flex flex-col md:flex-row gap-4 items-start h-[37rem]">
           {/* Left showcase section */}
           <div className="w-full md:w-1/2 h-full">
             <h2 className="text-4xl font-bold mb-8 text-center">Day {dayNumber}: {title}</h2>
