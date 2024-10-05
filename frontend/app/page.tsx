@@ -71,34 +71,8 @@ export default function Home() {
           <h2 className="text-3xl font-semibold mb-4">About the Project</h2>
           <p className="text-gray-700 mb-6">{projectDescription}</p>
         </motion.div>
-
-        {/* Featured days section */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="mb-12"
-        >
-          <h3 className="text-2xl font-semibold mb-4">Daily Challenges</h3>
-          <div className="space-y-4">
-            {featuredDays.map((day, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 * index, duration: 0.3 }}
-              >
-                <Link href={`/day${day.day}`} className="block p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
-                  <h4 className="text-xl font-semibold">Day {day.day}: {day.title}</h4>
-                  <p className="text-gray-600">{day.description}</p>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Latest challenges section */}
-        <motion.div
+                {/* Latest challenges section */}
+                <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
@@ -165,6 +139,33 @@ export default function Home() {
 
           </div>
         </motion.div>
+
+        {/* Featured days section */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="mb-12"
+        >
+          <h3 className="text-2xl font-semibold mb-4">Daily Challenges</h3>
+          <div className="space-y-4">
+            {featuredDays.map((day, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1 * index, duration: 0.3 }}
+              >
+                <Link href={`/day${day.day}`} className="block p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
+                  <h4 className="text-xl font-semibold">Day {day.day}: {day.title}</h4>
+                  <p className="text-gray-600">{day.description}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+
 
         {/* Inspiration section */}
         <motion.div
