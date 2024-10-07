@@ -7,6 +7,7 @@ import CreateButton from './day2/CreateButton';
 import Command from './day3/Command';
 import Upload from './day4/Upload';
 import { time } from 'console';
+import Transcribe from './day6/Transcribe';
 import Settings from './day5/Settings';
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
 
@@ -35,6 +36,11 @@ const featuredDays = [
     day: 5,
     title: "Settings UI",
     description: "An interactive settings component that allows users to adjust dimensions using sliders.",
+  },
+  {
+    day: 6,
+    title: "Transcribe",
+    description: "A dynamic speech-to-text transcription component that simulates real-time voice recognition.",
   }
 ];
 
@@ -87,6 +93,18 @@ export default function Home() {
         >
           <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 space-y-4">
+            {/* Day 6 Challenge */}
+            <div className="col-span-2">
+              <h4 className="text-xl font-semibold mb-2">Day 6: Transcribe</h4>
+              <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-72">
+                <Transcribe />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day6" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 6 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
             {/* Day 5 Challenge */}
             <div className="col-span-2">
               <h4 className="text-xl font-semibold mb-2">Day 5: Settings UI</h4>
