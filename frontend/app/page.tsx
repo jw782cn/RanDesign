@@ -9,6 +9,8 @@ import Upload from './day4/Upload';
 import { time } from 'console';
 import Transcribe from './day6/Transcribe';
 import Settings from './day5/Settings';
+import { useEffect, useState } from 'react';
+
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
 
 const featuredDays = [
@@ -69,10 +71,28 @@ export default function Home() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-3xl font-semibold mb-8 text-center text-gray-600"
+          className="text-3xl font-semibold mb-2 text-center text-gray-600"
         >
           Chenran's Frontend Design Challenge
         </motion.h2>
+        
+        {/* GitHub link */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="flex justify-center items-center mb-8"
+        >
+          <a
+            href="https://github.com/jw782cn/RanDesign"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200"
+          >
+            <i className="fab fa-github text-xl mr-2"></i>
+            <span className="font-semibold">GitHub</span>
+          </a>
+        </motion.div>
 
         {/* Project description section */}
         <motion.div
