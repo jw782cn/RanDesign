@@ -15,6 +15,7 @@ const Navbar: React.FC = () => {
         { id: 4, name: 'Day 4' },
         { id: 5, name: 'Day 5' },
         { id: 6, name: 'Day 6' },
+        { id: 7, name: 'Day 7' },
     ];
 
     const currentDay = days.find(day => pathname === `/day${day.id}`) || { id: 0, name: 'Home' };
