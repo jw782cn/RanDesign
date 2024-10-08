@@ -9,6 +9,7 @@ import Upload from './day4/Upload';
 import { time } from 'console';
 import Transcribe from './day6/Transcribe';
 import Settings from './day5/Settings';
+import AnimatedButton from './day7/AnimatedButton';
 import { useEffect, useState } from 'react';
 
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
@@ -43,6 +44,11 @@ const featuredDays = [
     day: 6,
     title: "Transcribe",
     description: "A dynamic speech-to-text transcription component that simulates real-time voice recognition.",
+  },
+  {
+    day: 7,
+    title: "Animated Button",
+    description: "An interactive animated button component that transitions from 'Doing' to 'Completed' state.",
   }
 ];
 
@@ -112,9 +118,9 @@ export default function Home() {
           className="mb-12"
         >
           <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Day 6 Challenge */}
-            <div className="col-span-2">
+            <div>
               <h4 className="text-xl font-semibold mb-2">Day 6: Transcribe</h4>
               <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-72">
                 <Transcribe />
@@ -125,7 +131,20 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            {/* Day 7 */}
+            <div>
+              <h4 className="text-xl font-semibold mb-2">Day 7: Animated Button</h4>
+              <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-72">
+                <AnimatedButton onClick={() => console.log('Button clicked')} />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day7" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 7 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
             {/* Day 5 Challenge */}
+            
             <div className="col-span-2">
               <h4 className="text-xl font-semibold mb-2">Day 5: Settings UI</h4>
               <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-72">
@@ -150,7 +169,7 @@ export default function Home() {
               </div>
             </div>
             {/* Day 3 Challenge */}
-            <div className="col-span-2 h-[36rem]">
+            <div className="col-span-2 h-[36rem] mb-4">
               <h4 className="text-xl font-semibold mb-2">Day 3: Command Menu</h4>
               <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg">
                 <Command />
