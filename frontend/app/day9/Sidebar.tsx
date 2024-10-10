@@ -96,12 +96,12 @@ const MenuItem: React.FC<{ item: MenuItem, depth?: number }> = ({ item, depth = 
 const Sidebar: React.FC = () => {
   return (
     <div className="flex w-full bg-blue-50/20 rounded-lg border ">
-      <div className="w-64 rounded-lg h-full mt-2">
+      <div className="w-64 rounded-lg h-full mt-4">
         <div className="p-4 flex items-center space-x-2 border-b border-neutral-100">
           <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
             <GlobeAltIcon className="w-5 h-5 text-white" />
           </div>
-          <h1 className="text-xl font-semibold mt-2">Spherenet</h1>
+          <h1 className="text-xl font-semibold">Spherenet</h1>
         </div>
         <nav className="mt-1">
           <ul className='space-y-1'>
