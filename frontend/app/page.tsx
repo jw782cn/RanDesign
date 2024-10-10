@@ -11,7 +11,8 @@ import Transcribe from './day6/Transcribe';
 import Settings from './day5/Settings';
 import AnimatedButton from './day7/AnimatedButton';
 import TagInput from './day8/TagInput';
-import { useEffect, useState } from 'react';
+import Sidebar from './day9/Sidebar';
+
 
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
 
@@ -50,6 +51,16 @@ const featuredDays = [
     day: 7,
     title: "Animated Button",
     description: "An interactive animated button component that transitions from 'Doing' to 'Completed' state.",
+  },
+  {
+    day: 8,
+    title: "Tag Input",
+    description: "An interactive tag input component that allows users to add and remove tags.",
+  },
+  {
+    day: 9,
+    title: "Interactive Dashboard",
+    description: "An interactive dashboard layout featuring a responsive sidebar and a main content area.",
   }
 ];
 
@@ -120,6 +131,18 @@ export default function Home() {
         >
           <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Day 9 Challenge */}
+            <div className='col-span-2'>
+              <h4 className="text-xl font-semibold mb-2">Day 9: Interactive Dashboard</h4>
+              <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-[40rem]">
+                <Sidebar />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day9" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 9 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
             {/* Day 8 Challenge */}
             <div className='col-span-2'>
               <h4 className="text-xl font-semibold mb-2">Day 8: Tag Input</h4>
