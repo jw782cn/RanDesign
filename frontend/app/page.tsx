@@ -12,6 +12,7 @@ import Settings from './day5/Settings';
 import AnimatedButton from './day7/AnimatedButton';
 import TagInput from './day8/TagInput';
 import Sidebar from './day9/Sidebar';
+import TemperatureSlider from './day10/TemperatureSlider';
 
 
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
@@ -61,6 +62,11 @@ const featuredDays = [
     day: 9,
     title: "Interactive Dashboard",
     description: "An interactive dashboard layout featuring a responsive sidebar and a main content area.",
+  },
+  {
+    day: 10,
+    title: "Temperature Slider",
+    description: "An interactive temperature slider component that allows users to adjust temperature within a given range.",
   }
 ];
 
@@ -131,6 +137,18 @@ export default function Home() {
         >
           <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Day 10 Challenge */}
+            <div className='col-span-2'>
+              <h4 className="text-xl font-semibold mb-2">Day 10: Temperature Slider</h4>
+              <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-64">
+                <TemperatureSlider min={0} max={100} step={1} />
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day10" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 10 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
             {/* Day 9 Challenge */}
             <div className='col-span-2'>
               <h4 className="text-xl font-semibold mb-2">Day 9: Interactive Dashboard</h4>

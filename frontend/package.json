@@ -17,6 +17,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.9.0",
     "lucide-react": "^0.447.0",
+    "motion-number": "^0.1.7",
     "next": "14.2.14",
     "next-themes": "^0.3.0",
     "react": "^18",
@@ -24,6 +25,7 @@
     "react-dropzone": "^14.2.9",
     "react-icons": "^5.3.0",
     "react-resizable-panels": "^2.1.4",
+    "react-spring": "^9.7.4",
     "react-tweet": "^3.2.1",
     "shiki": "^1.21.0",
     "tailwind-merge": "^2.5.2",
@@ -38,5 +40,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@4.3.0+sha512.1606bef7c84bc7d83b8576063de2fd08f7d69f9939015bed800f9585a002390268ecc777e9feeba7e26e9556aef6beaad4806968db2182ab5dd3e955ab3b9a0b"
 }
