@@ -13,6 +13,7 @@ import AnimatedButton from './day7/AnimatedButton';
 import TagInput from './day8/TagInput';
 import Sidebar from './day9/Sidebar';
 import TemperatureSlider from './day10/TemperatureSlider';
+import VoiceChat from './day11/VoiceChat';
 
 
 const projectDescription = "Hi 👋 I'm Chenran, and this is my frontend design challenge project. I'm embarking on a 50-day journey, with a new design challenge every day, showcasing different UI components and layout techniques. Through this project, I aim to improve my frontend skills while providing inspiration and reference for other learners.";
@@ -67,6 +68,11 @@ const featuredDays = [
     day: 10,
     title: "Temperature Slider",
     description: "An interactive temperature slider component that allows users to adjust temperature within a given range.",
+  },
+  {
+    day: 11,
+    title: "Voice Chat",
+    description: "An interactive voice chat component that allows users to chat with the AI.",
   }
 ];
 
@@ -99,7 +105,7 @@ export default function Home() {
         >
           Chenran's Frontend Design Challenge
         </motion.h2>
-        
+
         {/* GitHub link */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -128,8 +134,8 @@ export default function Home() {
           <h2 className="text-3xl font-semibold mb-4">About the Project</h2>
           <p className="text-gray-700 mb-6">{projectDescription}</p>
         </motion.div>
-                {/* Latest challenges section */}
-                <motion.div
+        {/* Latest challenges section */}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
@@ -137,8 +143,20 @@ export default function Home() {
         >
           <h3 className="text-2xl font-semibold mb-4">Latest Challenges</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Day 11 Challenge */}
+            <div className='col-span-1'>
+              <h4 className="text-xl font-semibold mb-2">Day 11: Voice Chat</h4>
+              <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-64">
+                <div className='h-64 flex items-center'><VoiceChat /></div>
+              </div>
+              <div className="mt-4 text-center">
+                <Link href="/day11" className="inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition duration-300 ease-in-out transform hover:scale-105">
+                  View Day 11 <span className="ml-2">→</span>
+                </Link>
+              </div>
+            </div>
             {/* Day 10 Challenge */}
-            <div className='col-span-2'>
+            <div className='col-span-1'>
               <h4 className="text-xl font-semibold mb-2">Day 10: Temperature Slider</h4>
               <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-64">
                 <TemperatureSlider min={0} max={100} step={1} />
@@ -199,7 +217,7 @@ export default function Home() {
               </div>
             </div>
             {/* Day 5 Challenge */}
-            
+
             <div className="col-span-2">
               <h4 className="text-xl font-semibold mb-2">Day 5: Settings UI</h4>
               <div className="flex justify-center items-center p-4 border border-gray-100 rounded-lg h-72">
